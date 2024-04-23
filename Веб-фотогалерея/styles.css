@@ -1,0 +1,272 @@
+html {
+   scroll-behavior: smooth; 
+}
+
+body {
+    margin: 0;
+    background-color: rgb(37, 37, 37);
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+/* HEADER */
+header {
+    height: 500px;
+    position: relative;
+}
+
+#header-background {
+    background-image: url(photo/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    filter: brightness(0.4);
+}
+
+#header-content {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    color: rgb(245, 245, 245);
+    font-weight: 700;
+    font-size: 72px;
+}
+
+#header-add-txt {
+    font-family: 'Work Sans';
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: -40px;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+nav a {
+    color: whitesmoke;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'Work Sans';
+    font-size: 20px;
+    padding: 10px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid whitesmoke;
+    background-color: rgb(37, 37, 37);
+    color: #f8af73;
+    border-radius: 10px;
+}
+
+/* MAIN */
+h3, h2 {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 36px;
+    background-color: rgb(71, 71, 71);
+    padding: 40px;
+    margin-top: 0;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Work Sans';
+    margin-bottom: 40px;
+    margin-top: 70px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* ANCIENT ARCHITECTURE SECTION */
+/* EGYPTIAN ARCHITECTURE */
+#eg-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#eg-photo-1-1 {
+    display: flex;
+}
+
+/* GREEK ARCHITECTURE */
+#gr-photo-1,
+#gr-photo-2 {
+    display: flex;
+    justify-content: center;
+}
+
+#gr-photo-2 {
+    margin-top: 20px;
+}
+
+/* ROMAN ARCHITECTURE */
+#rmn-photo,
+#rmn-gr-1,
+.rmn-gr-1-1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* MEDIVAL ARCHITECTURE SECTION*/
+/* GOTHOC ARCHITECTURE */
+#got-photo {
+    display: flex;
+    justify-content: center;
+}
+
+#got-1 {
+    margin-right: 20px;
+}
+
+/* RENAISSANCE ARCHITECTURE */
+#rns-1 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#rns-2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* BAROQUE ARCHITECTURE */
+#baroque-1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#baroque-2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* NEOCLASSICAL ARCHITECTURE */
+#ncls-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* MODERN ARCHITECTURE SECTION*/
+/* ART DECO */
+#artdeco-photo {
+    display: flex;
+        justify-content: center;
+}
+
+/* BRUTALISM */
+#brut-photo {
+    display: flex;
+    justify-content: center;
+}
+
+#brut-ph-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+#brut-ph-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+
+/* ALL IMAGES STYLES */
+img {
+    display: block;
+    filter: drop-shadow(0 0 6px whitesmoke);
+}
+
+/* MAIN SECTIONS IMAGES STYLES */
+.image {
+    position: relative;
+    font-family: 'Work Sans'
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.image__description {
+    display: flex;
+    font-family: 'Work Sans'
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.location {
+    height: 20px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    color: whitesmoke;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Work Sans';
+    font-size: 14px;
+}

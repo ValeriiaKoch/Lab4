@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Web Photo Galery</title>
+    <script>
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll('section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+            let selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+        window.onload = function () {
+            showSection('ancient-architecture');
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div id="header-background"></div>
+        <div id="header-content">
+            <div id="title">
+                <h1>Architectural Styles</h1><br>
+                <span id="header-add-txt">Web Photo Gallery</span>
+            </div>
+                <nav>
+                    <a href="#ancient-architecture" onclick="showSection('ancient-architecture')">Ancient Architecture</a>
+                    <a href="#medival-architecture" onclick="showSection('medival-architecture')">Medival Architecture</a>
+                    <a href="#modern-architecture" onclick="showSection('modern-architecture')">Modern Architecture</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="ancient-architecture">
+            <h2>Ancient Architecture</h2>
+            <div id="egyptian-architecture">
+                <h3>Egyptian Architecture</h3>
+                <div id="eg-photo">
+                    <div id="eg-photo-1">
+                        <div id="eg-photo-1-1">
+                            <div class="image" style="margin-right: 10px;">
+                                <img src="photo/egyptian/abu-simbel.jpeg" style="height: 130px;" alt="Abu Simbel Temples">
+                                <div class="image__overlay">
+                                    <div class="image__title">Abu Simbel Temples</div>
+                                    <p class="image__description">
+                                        <img class="location" src="photo/icons8-location-50.png" alt="location img">Abu Simbel, Aswan Governorate, Egypt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="image" style="margin-left: 10px;">
+                                <img src="photo/egyptian/pyramids-of-giza.jpeg" style="height: 130px;" alt="The Pyramids of Giza">
+                                <div class="image__overlay">
+                                    <div class="image__title">The Pyramids of Giza</div>
+                                    <p class="image__description">
+                                        <img class="location" src="photo/icons8-location-50.png" alt="location img">Giza, Greater Cairo, Egypt
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image" style="margin-top: 20px;">
+                            <img src="photo/egyptian/temple-of-karnak.jpg" style="width: 420px;" alt="The Karnak Temple">
+                            <div class="image__overlay">
+                                <div class="image__title">The Karnak Temple</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">El-Karnak, Luxor Governorate, Egypt
+                                </p>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="image" style="margin-left: 20px;">
+                        <img src="photo/egyptian/sphinx.jpeg" style="height: 424px;" alt="The Great Shinx of Giza">
+                        <div class="image__overlay">
+                            <div class="image__title">The Great Sphinx of Giza</div>
+                            <p class="image__description">
+                                <img class="location" src="photo/icons8-location-50.png" alt="location img">Al Haram, Giza Governorate, Egypt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="greek-architecture">
+                <h3>Greek Architecture</h3>
+                <div id="gr-photo">
+                    <div id="gr-photo-1">
+                        <div class="image" style="margin-right: 10px;">
+                            <img src="photo/greek/apollo.jpg" style="width: 400px;" alt="The Temple of Appollo">
+                            <div class="image__overlay">
+                                <div class="image__title">The Temple of Apollo</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">ASide, Manavgat/Antalya, Turkey
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image" style="margin-left: 10px;">
+                            <img src="photo/greek/concordio.jpg" style="width: 400px;" alt="The Temple of Concordia">
+                            <div class="image__overlay">
+                                <div class="image__title">The Temple of Concordia</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Agrigento, Italy
+                                </p>
+                            </div>
+                        </div>     
+                    </div>
+                    <div id="gr-photo-2">
+                        <div class="image" style="margin-right: 10px;">
+                            <img src="photo/greek/erechtejon.jpg" style="width: 400px;" alt="The Erechteion">
+                            <div class="image__overlay">
+                                <div class="image__title">The Erechtheion</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Athens, Greece
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image" style="margin-left: 10px;">
+                            <img src="photo/greek/segesta.jpg" style="width: 400px;" alt="The Temple of Segesta">
+                            <div class="image__overlay">
+                                <div class="image__title">The Temple of Segesta</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Contrada Barbaro, Calatafimi-Segesta TP, Italy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="roman-architecture">
+                <h3>Roman Architecture</h3>
+                <div id="rmn-photo">
+                    <div id="rmn-1" style="margin-right: 20px;">
+                        <div class="rmn-gr-1-1">
+                            <div class="image">
+                                <img src="photo/roman/bachus.jpg" style="width: 420px;">
+                                <div class="image__overlay">
+                                    <div class="image__title">The Temple of Bacchus</div>
+                                    <p class="image__description">
+                                        <img class="location" src="photo/icons8-location-50.png" alt="location img">Baalbek, Lebanon
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rmn-gr-1-1" style="margin-top: 20px; margin-bottom: 20px;">
+                            <div class="image" style="margin-right: 10px;">
+                                <img src="photo/roman/capitolium.jpg" style="width: 200px;">
+                                <div class="image__overlay">
+                                    <div class="image__title">The Capitolium temple</div>
+                                    <p class="image__description">
+                                        <img class="location" src="photo/icons8-location-50.png" alt="location img">Teboursouk, Tunisia
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="image" style="margin-left: 10px">
+                                <img src="photo/roman/panteon.webp" style="width: 200px;">
+                                <div class="image__overlay">
+                                    <div class="image__title">The Pantheon</div>
+                                    <p class="image__description">
+                                        <img class="location" src="photo/icons8-location-50.png" alt="location img">Piazza della Rotonda, Roma, Italy
+                                    </p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="rmn-2">
+                        <div class="image">
+                            <img src="photo/roman/pont-du-gard.jpg" style="height: 414px;" alt="The Pont du Gard">
+                            <div class="image__overlay">
+                                <div class="image__title">The Pont du Gard</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Vers-Pont-du-Gard, France
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="medival-architecture">
+            <h2>Medival Architecture</h2>
+            <div id="gothic-architecture">
+                <h3>Gothic Architecture</h3>
+                <div id="got-photo">
+                    <div id="got-1">
+                        <div class="image" style="margin-bottom: 20px;">
+                            <img src="photo/gothic/kutna-hora-st.barbara-cathedral.jpg" style="width: 400px;" alt="St. Barbara's Cathedral">
+                            <div class="image__overlay">
+                                <div class="image__title">St. Barbara's Cathedral</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Kutná Hora, Czechia
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="photo/gothic/notre-dam-de-paris.jpg" style="width: 400px;" alt="Notre-Dame de Paris">
+                            <div class="image__overlay">
+                                <div class="image__title">Notre-Dame de Paris</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Paris, France
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="got-2">
+                        <div class="image" style="margin-bottom: 20px;">
+                            <img src="photo/gothic/cologne-cathedral.avif" style="height: 300px;" alt="Cologne Cathedral">
+                            <div class="image__overlay">
+                                <div class="image__title">Cologne Cathedral</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Köln, Germany
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="photo/gothic/westminster-abbey.avif" style="height: 312px; width:240px;" alt="Westminster Abbey">
+                            <div class="image__overlay">
+                                <div class="image__title">Westminster Abbey</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">London, United Kingdom
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="renaissance-architecture">
+                <h3>Renaissance Architecture</h3>
+                    <div id="rns-1">
+                        <div class="image" style="margin-right: 10px;">
+                            <img src="photo/renaissance/florence-cathedral.jpg" style="height: 200px;" alt="The Cathedral of Santa Maria del Fiore">
+                            <div class="image__overlay">
+                                <div class="image__title">The Cathedral of Santa Maria del Fiore</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Piazza del Duomo, Florence, Italy
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image" style=" margin-left: 10px;">
+                            <img src="photo/renaissance/frederiksborg-castle.jpg" style="height: 200px;" alt="Frederiksborg Castle">
+                            <div class="image__overlay">
+                                <div class="image__title">Frederiksborg Castle</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Hillerød, Denmark
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="rns-2"> 
+                        <div class="image" style="margin-right: 10px;">
+                            <img src="photo/renaissance/sanpietro.jpg" style="height: 200px;" alt="San Pietro in Montorio">
+                            <div class="image__overlay">
+                                <div class="image__title">San Pietro in Montorio</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Piazza di S. Pietro in Montorio, Roma, Italy
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image" style="margin-left: 10px;">
+                            <img src="photo/renaissance/santa-maria-novela.jpg" style="height: 200px;" alt="Santa Maria Novella">
+                            <div class="image__overlay">
+                                <div class="image__title">Santa Maria Novella</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Piazza di Santa Maria Novella, Florence, Italy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="baroque-architecture">
+                <h3>Baroque Architecture</h3>
+                <div id="baroque-1">
+                    <div class="image" style="margin-right: 10px;">
+                        <img src="photo/baroque/palaca-wersalies.jpg" style="height: 200px;" alt="The Palace of Versailles">
+                        <div class="image__overlay">
+                            <div class="image__title">The Palace of Versailles</div>
+                            <p class="image__description">
+                                <img class="location" src="photo/icons8-location-50.png" alt="location img">Versailles, France
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image" style="margin-left: 10px;">
+                        <img src="photo/baroque/royal-madrid-palace.jpg" style="height: 200px;" alt="The Royal Palace of Madrid">
+                        <div class="image__overlay">
+                            <div class="image__title">The Royal Palace of Madrid</div>
+                            <p class="image__description">
+                                <img class="location" src="photo/icons8-location-50.png" alt="location img">Madrid, Spain
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="baroque-2">
+                    <div class="image" style="margin-right: 10px;">
+                        <img src="photo/baroque/sant-ignazio.jpg" style="height: 200px;" alt="The Church of St. Ignatius of Loyola at Campus Martius">
+                        <div class="image__overlay">
+                            <div class="image__title">The Church of St. Ignatius of Loyola at Campus Martius</div>
+                            <p class="image__description">
+                                <img class="location" src="photo/icons8-location-50.png" alt="location img">Roma, Italy
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image" style="margin-left: 10px;">
+                        <img src="photo/baroque/trevi-fountain.jpg" style="height: 200px;" alt="The Trevi Fountain">
+                        <div class="image__overlay">
+                            <div class="image__title">The Trevi Fountain</div>
+                            <p class="image__description">
+                                <img class="location" src="photo/icons8-location-50.png" alt="location img">Roma, Italy
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="neoclassical-architecture">
+                <h3>Neoclassical Architecture</h3>
+                <div id="ncls-photo">
+                    <div class="image" style="margin-right: 20px;">
+                        <img src="photo/neoclassical/la-petit-trianon.jpg" style="width: 300px;" alt="Le Petit Trianon">
+                        <div class="image__overlay">
+                            <div class="image__title">Le Petit Trianon</div>
+                            <p class="image__description">
+                                <img class="location" src="photo/icons8-location-50.png" alt="location img">Versailles, France
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image" style="margin-right: 20px;">
+                        <img src="photo/neoclassical/sydney-town-hall.jpg" style="width: 300px;" alt="Santa Maria Novella">
+                        <div class="image__overlay">
+                            <div class="image__title">Sydney Town Hall</div>
+                            <p class="image__description">
+                                <img class="location" src="photo/icons8-location-50.png" alt="location img">Sydney, Australia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="photo/neoclassical/white-house.jpg" style="width: 300px;" alt="The White House">
+                        <div class="image__overlay">
+                            <div class="image__title">The White House</div>
+                            <p class="image__description">
+                                <img class="location" src="photo/icons8-location-50.png" alt="location img">Washington, USA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="modern-architecture">
+            <h2>Modern Architecture</h2>
+            <div id="art-deco">
+                <h3>Art Deco</h3>
+                <div id="artdeco-photo">
+                    <div class="image" style="margin-right: 20px; height: 400px;">
+                        <img src="photo/art-deco/bryant-park-hotel.jpg" style="height: 400px;" alt="The Bryant Park Hotel">
+                        <div class="image__overlay">
+                            <div class="image__title">The Bryant Park Hotel</div>
+                            <p class="image__description">
+                                <img class="location" src="photo/icons8-location-50.png" alt="location img">New York, USA
+                            </p>
+                        </div>
+                    </div>
+                    <div id="artdeco-middle-ph">
+                        <div class="image" style="margin-bottom: 20px;">
+                            <img src="photo/art-deco/griffith-observatory.jpg" style="height: 190px;" alt="Griffith Observatory">
+                            <div class="image__overlay">
+                                <div class="image__title">Griffith Observatory</div>
+                                    <p class="image__description">
+                                        <img class="location" src="photo/icons8-location-50.png" alt="location img">Los Angeles, USA
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="image" style="margin-bottom: 20px;">
+                           <img src="photo/art-deco/niagara-mohavk.jpg" style="height: 190px; width: 405px;" alt="The Niagara Mohawk Building">
+                           <div class="image__overlay">
+                                <div class="image__title">The Niagara Mohawk Building</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Syracuse, NY, USA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image" style="margin-left: 20px;">
+                            <img src="photo/art-deco/empire-state.jpg" style="height: 400px;" alt="The Empire State Building">
+                            <div class="image__overlay">
+                                <div class="image__title">The Empire State Building</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">New York, NY, USA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="brutalism">
+                <h3>Brutalism</h3>
+                <div id="brut-photo">
+                    <div id="brut-ph-1">
+                        <div class="image">
+                            <img src="photo/brutalism/bank-of-london.jpg" style="width: 333px;" alt="Bank of London and South America">
+                            <div class="image__overlay">
+                                <div class="image__title">Bank of London and South America</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Buenos-Aires, Argentina
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image" style="margin-top: 20px;">
+                            <img src="photo/brutalism/sesc-pompeia.jpg" style="width: 333px;" alt="SESC Pompéia">
+                            <div class="image__overlay">
+                                <div class="image__title">SESC Pompéia</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">São Paulo, Brazil
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="brut-ph-2">
+                        <div class="image">
+                            <img src="photo/brutalism/Universidad de Ingenieria y Tecnologia.jpg" style="height: 160px;" alt="Universidad de Ingeniería y Tecnología">
+                            <div class="image__overlay">
+                                <div class="image__title">Universidad de Ingeniería y Tecnología</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Barranco, Peru
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image" style="margin-top: 20px;">
+                            <img src="photo/brutalism/buffalo-court.jpg" style="height: 420px;" alt="The Buffalo City Court Building">
+                            <div class="image__overlay">
+                                <div class="image__title">The Buffalo City Court Building</div>
+                                <p class="image__description">
+                                    <img class="location" src="photo/icons8-location-50.png" alt="location img">Buffalo, NY, USA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="copyright">
+            COPYRIGHT &#169; 2024 PHOTO GALLERY
+            <p>made by Kochnieva Valeriia</p>
+        </div>
+    </footer>
+</body>
+</html>
